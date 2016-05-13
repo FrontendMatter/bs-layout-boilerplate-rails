@@ -1,0 +1,24 @@
+{
+  "name": "bs-layout-boilerplate-rails",
+  "description": "Rails app boilerplate using Bootstrap Layout",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "4.0.0-alpha.2",
+    "bootstrap-layout": "1.0.0-alpha.8",
+    "bootstrap-layout-scrollable": "^1.0.2",
+    "jquery": "^2.2.3",
+    "sass-md-colors": "^1.0.0",
+    "simplebar": "github:grsmto/simplebar",
+    "tether": "^1.3.2"
+  }
+}

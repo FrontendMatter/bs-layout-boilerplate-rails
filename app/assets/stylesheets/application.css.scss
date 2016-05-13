@@ -1,0 +1,36 @@
+/* 
+ *= require simplebar/dist/simplebar
+ *= require_tree .
+ */
+
+// Material Design Color Palette
+@import 'sass-md-colors/colors/variables';
+
+////////////////////////
+// VARIABLE OVERRIDES //
+////////////////////////
+
+$brand-primary: $teal-500;
+
+///////////////////////
+// DEFAULT VARIABLES //
+///////////////////////
+
+// Bootstrap Layout
+@import 'bootstrap-layout/src/sass/variables';
+
+// Bootstrap Layout Scrollable
+@import 'bootstrap-layout-scrollable/src/sass/variables';
+
+///////////
+// STYLE //
+///////////
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+// Bootstrap Layout
+@import 'bootstrap-layout/src/sass/style';
+
+// Bootstrap Layout Scrollable
+@import 'bootstrap-layout-scrollable/src/sass/style';

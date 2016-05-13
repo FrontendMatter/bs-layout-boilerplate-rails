@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bs-layout-boilerplate-rails demo</title>
+
+	<!-- Prevent the demo from appearing in search engines (REMOVE THIS) -->
+	<meta name="robots" content="noindex">
+  
+	<!-- Material Design Icons  -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!-- Roboto Web Font -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
+
+	<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+
+	<%= csrf_meta_tags %>
+
+</head>
+<body class="layout-container ls-top-navbar layout-sidebar-l3-md-up">
+
+	<!-- Navbar -->
+	<nav class="navbar navbar-light bg-white navbar-full navbar-fixed-top ls-left-sidebar">
+
+		<!-- Navbar toggle -->
+		<button class="navbar-toggler hidden-md-up pull-xs-right" type="button" data-toggle="collapse" data-target="#navbar"><span class="material-icons">menu</span></button>
+
+		<!-- Sidebar toggle -->
+		<button class="navbar-toggler pull-xs-left" type="button" data-toggle="sidebar" data-target="#sidebar"><span class="material-icons">menu</span></button>
+
+		<!-- Brand -->
+		<span class="navbar-brand">Brand</span>
+
+		<!-- Collapse -->
+		<div class="collapse navbar-toggleable-xs" id="navbar">
+			<ul class="nav navbar-nav">
+				<li class="nav-item"><a class="nav-link" href="<%= root_path %>">Fixed</a></li>
+				<li class="nav-item active"><a class="nav-link" href="<%= sidebar_path %>">Sidebar</a></li>
+			</ul>
+		</div>
+		<!-- // END Collapse -->
+
+	</nav>
+	<!-- // END Navbar -->
+
+	<!-- Sidebar -->
+	<div class="sidebar sidebar-left sidebar-size-3 sidebar-visible-md-up sidebar-dark bg-primary" id="sidebar" data-scrollable>
+
+		<!-- Brand -->
+		<a href="/" class="sidebar-brand sidebar-brand-bg sidebar-brand-border m-b-0">Brand</a>
+
+		<ul class="sidebar-menu sm-active-button-bg">
+			<li class="sidebar-menu-item">
+				<a class="sidebar-menu-button" href="<%= root_path %>"><i class="sidebar-menu-icon material-icons">home</i> Fixed layout</a>
+			</li>
+			<li class="sidebar-menu-item active">
+				<a class="sidebar-menu-button" href="<%= sidebar_path %>"><i class="sidebar-menu-icon material-icons">menu</i> Sidebar layout</a>
+			</li>
+		</ul>
+		<!-- // END Menu -->
+
+	</div>
+	<!-- // END Sidebar -->
+
+	<!-- CONTENT -->
+	<div class="layout-content" data-scrollable>
+		<div class="container-fluid">
+			<%= yield %>
+		</div>
+	</div>
+
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	
+</body>
+</html>
